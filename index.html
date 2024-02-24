@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruit-TRY</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Recruit-TRY</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html">Signup</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="card">
+            <div class="hero">
+                <h2 style="text-decoration: underline;">Recruit-TRY</h2>
+                <p>Hire or Get Hired!</p>
+                <div class="buttons">
+                   <!-- <a href="signup.html" class="button">Register as Recruiter</a> -->
+                      <!-- <a href="signup.html" class="button">Register as Candidate</a> -->
+                      <button onclick="redirectToRecruiterForm()"> Register as Recruiter</button>
+                      <button onclick="redirectToCandidateForm()">Register as Candidate</button>             
+                
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other content for the homepage -->
+
+    <footer>
+        <p>&copy; 2023 Job Recruitment. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function redirectToRecruiterForm() {
+            window.location.href = "recruiter-form.html";
+        }
+
+        function redirectToCandidateForm() {
+            window.location.href = "candidate-form.html"; // Redirect to candidate-form.html
+        }
+    </script>
+</body>
+</html>

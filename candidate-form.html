@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Recruitment Form</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Recruit-TRY</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="recruiter-form.html">Signup</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="form">
+        <img class="bg"  src="bg2.jpg" alt="recruitment img">
+        <h2>Candidate Recruitment Form</h2>
+        <form class="f2" id="candidate-recruitment-form">
+            <div class="form-div">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-div">
+            <label for="qualifications">Qualifications:</label>
+            <input type="text" id="qualifications" name="qualifications" required>
+            </div>
+            <div class="form-div">
+            <label for="institute-company">Name of Institute or Company:</label>
+            <input type="text" id="institute-company" name="institute-company" required>
+            </div>
+            <div class="form-div">
+            <label for="joining-year">Year of Joining:</label>
+            <input type="text" id="joining-year" name="joining-year" required>
+            </div>
+            <div class="form-div">
+            <label for="passing-year">Year of Passing (Institute Only):</label>
+            <input type="text" id="passing-year" name="passing-year">
+            </div>
+            <div class="form-div">
+            <label for="previous-role">Previous Role (Company Only):</label>
+            <input type="text" id="previous-role" name="previous-role">
+            </div>
+            <div class="form-div">
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" name="contact" required>
+            <div class="form-div">
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" required>
+            </div>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Recruit-TRY. All rights reserved.</p>
+    </footer>
+
+    <!-- Add the JavaScript file -->
+    <script>
+        // Get the form element by its ID and add a submit event listener
+        const candidateRecruitmentForm = document.getElementById('candidate-recruitment-form');
+        candidateRecruitmentForm.addEventListener('submit', handleCandidateSignup);
+
+        // Function to handle the form submission when a candidate signs up
+        function handleCandidateSignup(event) {
+            event.preventDefault();
+
+            // Get the form data
+            const name = document.getElementById('name').value;
+            const qualifications = document.getElementById('qualifications').value;
+            const instituteCompany = document.getElementById('institute-company').value;
+            const joiningYear = document.getElementById('joining-year').value;
+            const passingYear = document.getElementById('passing-year').value;
+            const previousRole = document.getElementById('previous-role').value;
+            const contact = document.getElementById('contact').value;
+
+            // Create a candidateDetails object with the form data
+            const candidateDetails = {
+                name: name,
+                qualifications: qualifications,
+                instituteCompany: instituteCompany,
+                joiningYear: joiningYear,
+                passingYear: passingYear,
+                previousRole: previousRole,
+                contact: contact,
+            };
+
+            // Perform any additional processing here (if needed)
+            // ...
+
+            // Show the "Form successfully submitted" alert
+            alert('Form successfully submitted');
+
+            // Clear the form fields after submission
+            document.getElementById('name').value = '';
+            document.getElementById('qualifications').value = '';
+            document.getElementById('institute-company').value = '';
+            document.getElementById('joining-year').value = '';
+            document.getElementById('passing-year').value = '';
+            document.getElementById('previous-role').value = '';
+            document.getElementById('contact').value = '';
+        }
+    </script>
+</body>
+</html>
+
+

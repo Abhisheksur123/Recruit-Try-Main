@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Signup</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Recruit-TRY</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html">Signup</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="form">
+        <img class="bg" src="bg1.jpeg" alt="recruitment img">
+        <h2>Recruiter Signup</h2>
+        <!-- Add a unique ID to the form to target it in JavaScript -->
+        <form class="f2" id="recruiter-signup-form">
+            <div class="form-div">
+                <label for="enterprise-name">Name of the Enterprise:</label>
+                <input type="text" id="enterprise-name" name="enterprise-name" required>
+            </div>
+            <div class="form-div">
+                <label for="position">Position:</label>
+                <input type="text" id="position" name="position" required>
+            </div>
+            <div class="form-div">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-div">
+                <label for="salary">Salary:</label>
+                <input type="text" id="salary" name="salary" required>
+            </div>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Recruit-TRY. All rights reserved.</p>
+    </footer>
+
+    <!-- Add the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+

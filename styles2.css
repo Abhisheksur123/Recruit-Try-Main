@@ -1,0 +1,151 @@
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p, button, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+    color: #333;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+   /* Ensure that the footer is always at the bottom */
+}
+
+header {
+    
+    background-color: #007bff;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.form {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow to the card */
+    text-align: center;
+    max-width: 600px;
+}
+
+.form-heading {
+    margin-bottom: 20px;
+}
+
+.form-heading h2 {
+    margin: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form fields horizontally */
+    position:relative;
+    
+   
+}
+
+form label {
+    margin-top: 10px;
+    text-align: left; /* Align the labels to the left */
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Add styles for other sections and elements as needed */
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top:auto; /* Push the footer to the bottom */
+    
+}
+.f2{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+
+}
+.form-div{
+    
+    display:flex;
+    flex-direction: column;
+}
+
+.btn{
+    margin-bottom: 50px;
+    size: 10px;
+}
+h2{
+    font-size:xx-large;
+    text-decoration: underline;
+}
+
+.bg{
+   object-fit: cover;
+   top: 0;
+   left:0;
+    height: 100%;
+    width:100%;
+    position:absolute;
+    z-index: -1;
+    opacity:0.6;
+}
+.header{
+    height:20vh;
+}
+input{
+    
+    border:2px solid black;
+    border-radius:6px;
+    outline: none;
+    font-size:16px;
+    width:80%;
+    margin:11px auto;
+    padding:7px;
+    
+}
